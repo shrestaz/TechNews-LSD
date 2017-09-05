@@ -1,5 +1,3 @@
-**
-
 Requirement Analysis Document
 --------------------------------------
 
