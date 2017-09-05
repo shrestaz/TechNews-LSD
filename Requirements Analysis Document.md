@@ -17,8 +17,7 @@ The project will consist of creating a web application based on Hacker News webs
 Creating user accounts
 Allowing users to post links to articles and comment on the relevant posts
 Upvote and downvote the article links and comments made by other users
-Check out user profiles, self and others’ profiles
-Maybe more….(To be continued...)
+Check out user profiles, self and others’ profiles.
 
 **1.2. Project Deliverables**
 Weekly logs
@@ -27,7 +26,7 @@ GitHub Repository logs
 Final application
 
 **1.3. Project Success**
- The project will be determined successful when it is deployed and has an up-time of 95% on a period of 6 weeks and also not breaking down during the simulated stress tests. (??not sure exactly).
+ The project will be determined successful when it is deployed and has an up-time of 95% on a period of 6 weeks and also not breaking down during the simulated stress tests.
 
 **1.4. Objective**
 
