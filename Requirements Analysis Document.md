@@ -2,6 +2,7 @@ Requirement Analysis Document
 --------------------------------------
 
 **1. Introduction and Purpose**
+
 “Tech News” is a web application system that enables its users to access different cool,  unusual, fun tech stories. It is a platform that aims to inspire everybody with idea, does not matter how crazy it is. From solar cells inspired from insect eyes to the latest smartphones and their perks. All users have to follow one big simple rule:
 
 Post new, crazy, funky, fresh and offbeat tech material that even nobody probably thinks of. 
@@ -13,6 +14,7 @@ To get everybody more involved “Tech News” gives you the opportunity to spre
 The utopian point is to create a community that evaluates and gives valuable feedback to anybody posting, from people sitting at home, startups with big ideas, to well established corporations that want to check out how their new feature perk will be accepted from the people that can think critically. The substance of the materials will not be strictly checked as “Tech News” values its freedom but if a material got marked as spam or violates simple human ethics it will be removed. 
 
 **1.1. Scope of the project**
+
 The project will consist of creating a web application based on Hacker News website. The project will be completed by November of 2017. Modules of the application will include:
 - Creating user accounts
 - Allowing users to post links to articles and comment on the relevant posts
@@ -20,12 +22,14 @@ The project will consist of creating a web application based on Hacker News webs
 - Check out user profiles, self and others’ profiles.
 
 **1.2. Project Deliverables**
+
 Weekly logs
 Issue Reports
 GitHub Repository logs
 Final application
 
 **1.3. Project Success**
+
 The project will be determined successful when it is deployed and has an up-time of 95% on a period of 6 weeks and also not breaking down during the simulated stress tests.
 
 **1.4. Objective**
@@ -36,6 +40,7 @@ The project will be determined successful when it is deployed and has an up-time
 - When bugs and breakdowns are discovered, diagnose the system and take the proper actions within 2 days.
 
 **1.5. Success criteria**
+
 Our group consists of five members; Manish Shrestha, Yoana Dandarova, Mikkel Djurhuus, Rumyana Vaseva & Theis Rye.
 Final date for finishing the “Tech News” system (all its requirements and have it successfully accessible on the world wide web) is 02.11.2017. Our  team qualifies success as: finishing all user stories and different non programming tasks as deploying and ect… until the date mentioned earlier.
 Our focus is on creating easy to use web-site with simple interface. 
@@ -44,6 +49,7 @@ Our focus is on creating easy to use web-site with simple interface.
 **2. Proposed system**
 
 **2.1. Overview**
+
 The users of “Tech News” will be able to read, create, update and delete the tech related post links they upload. (CRUD operations on posting links.)
 The users of “Tech News” will be able to post comments for previously posted posts  links and upvote or downvote the  links.
 “Tech News” will resemble “Hacker News” and “Reddit”.
@@ -92,12 +98,15 @@ The following user scenarios portrays stories on how a user will interact with o
 | Scenario Description  | Signing up as a user                                             |
 
 Background:
+
 Mary is a Computer Science student who is a lurker of “Tech News” to get the relevant news regarding upcoming technologies and what’s new in the software development field and the likes. So far, she only browsed the links posted by other users and read the comments posted by them.
 
 Objective:
+
 Mary wants to interact with other users by replying to their posts and comments, and also post links about new relevant articles she finds interesting and thinks others would benefit from.
 
 Actions:
+
 Mary visits the web application, like usual, and clicks on “login” button on the top right. Since she doesn’t have an account already, she writes her information on the “Create Account” section with her username and password. With that filled in and submitting the information, she gets redirected to the home page, now with the ability to post links and comments and also vote.
 
 
@@ -114,13 +123,17 @@ Mary visits the web application, like usual, and clicks on “login” button on
 | Scenario Description  | Creating a Post to “Tech News”         |
 
 Background:
+
 Mary is an user of “Tech News” who already performed the actions to register and log into the website. 
 
 Objective:
+
 Mary wants to share a tech article she wrote and deployed to her own server. Her idea is to post its link on “Tech News” so more people can see it. 
 
 Actions:
+
 Mary goes to “TechNews.com” (for example) online. She clicks on “Submit A Link” from the top menu and the web site redirects her to a page where she is supposed to enter a URL to her article and title to be displayed for that link. Mary does put the URL to her article and title at the two empty input fields after that she presses “Save” button. The website redirects her immediately to the front page/the first page that loads and she can see her posted link and its title at the top of all other links.
 
 **2.5. Use Case Model**
+
 ![enter image description here](https://lh3.googleusercontent.com/mORYf-kSQ3kTLp-5NxY68LKf6Auh1AdWmeICTGgAKVeQ53Ia6VSdSXvEJYuxdr5RaPnTHUZb5BWaqA=s0 "Use case diagram")
