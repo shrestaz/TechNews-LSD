@@ -7,16 +7,16 @@ Our application consists of a NodeJS project, which handles the back-end and Rea
 
 > https://github.com/shrestaz/TechNews-Jenkins.git
 
-As of right now, it has to be instantiated locally as we have not been successfully able to deploy it using Jenkins and Docker onto a DigitalOcean droplet. 
+As of right now, it has to be instantiated locally as we have not been successfully able to deploy it using Jenkins and Docker onto a DigitalOcean droplet. We decided to use Jenkins because we had to do an exercise for Continuous Integration of Java web application in the class. There were challenges faced for our application because it is in JavaScript and we had to do a lot of research on our own. We have now decided to do the integration using Travis but for future implementation.
 
 ![Current front end of the web app](https://lh3.googleusercontent.com/pwkzpRH-Ebh_Fbl9WYEjgMgYepbFSKDA49QUbYMqrPRYhBKDj727DEuv4H27LbeeyytGkzuvwVGZoA=s0 "Screenshot-20170920100815-653x521.png")
 
 *Current front end of the web app*
 
-For our continuous integration server, we worked with Jenkins. We decided to pursue it after we had to do exercise for continuous integration of Java web application. There were challenges faced and we have decided to do the integration using Travis but for future implementation.
 
-The web app itself has a front - end and backend - part written in React.js and Node.js. For database, Mysql has been used. We already had a part of it developed and working fine. But for this assignment we simplified it and left it without database. That has been done because the node app by itself builds successfully but when Jenkins tries to use the image to deploy it fails with the error: 
+The web app itself has a front-end and back-end - part written in ReactJS and NodeJS. For database, MySQL has been used. We already had a part of it developed and working fine. But for this assignment we simplified it and left it without database. That has been done because the node app by itself builds successfully but when Jenkins tries to use the image to deploy it fails with the error: 
 `Error: listen EADDRINUSE :::3000`
+
 From our understanding, it occurs because the port has been used by other application and is not available for the web app to use but we tried many random ports and still faced the same error.
 
 ![enter image description here](https://lh3.googleusercontent.com/RVhb2CB2IdULGnpYb7Zgs4jHPXrDTCJD8B-VJABiSv8AHm_flR7y_jelPb5R0IxRWFXs15sP98olow=s0 "Screenshot-20170920102040-1364x424.png")
