@@ -143,15 +143,25 @@ Mary goes to “TechNews.com” (for example) on the internet. She clicks on
 
 
 Description of use cases:
+
 a. Register:
+
 //explain
+
 b. Log in:
+
 Logging into the website
 
+
 Description of Actors:
+
 a. Admin:
+
 //explain
+
 b. User:
+
 //explain
+
 
 Fully Dressed use case
