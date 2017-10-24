@@ -1,10 +1,10 @@
-<h3>Logical Data Model
+<h3>Logical Data Model</h3>
 
 
 ![enter image description here](https://lh3.googleusercontent.com/dSab5TdOk7EGdpyLRvjyeeQw1X84oyNLr1kwZEqkZokImkodm4gAnUhVXiwPoM6NpTuIX0b2YuXpWg=s0 "Logical Data Model.png")
 
-<h3>Use Case Model
-<h4>1. Use Case Diagram
+<h3>Use Case Model</h3>
+<h4>1. Use Case Diagram</h4>
 
 ![enter image description here](https://lh3.googleusercontent.com/M4NVl0gdzoM78eAe94zzrysYX_my4YKz7PrWuuT6FDeDyU9i3o6ZAuEEhf557rly8PH7DVSIurYmgw=s0 "Hacker News Clone &#40;3&#41;.png")
 
