@@ -11,12 +11,15 @@
 <h4>2. Actors:</h4>
 
 I. *Guest User* (Primary Actor): An unregistered user using the system. 
+
 Responsibilities: Can view posts/comments, register as a user and login.
 
 II. *Registered User* (Primary Actor): A user registered in the system with his/her unique credentials. 
+
 Responsibilities: Can create posts/comments, view posts/comments, upvote or downvote the posts/comments made by others, report posts/comments and update his account details.
 
 III. *Administrator* (Primary Actor): This actor administers the system. 
+
 Responsibilities: Can take reported posts into context and remove post and/or user when necessary.
 
 
