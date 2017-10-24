@@ -11,22 +11,28 @@
 <h4>2. Actors:</h4>
 
 I. *Guest User* (Primary Actor): An unregistered user using the system.
+
 Responsibilities: Can view posts/comments, register as a user and login.
 
 
 II. *Registered User* (Primary Actor): A user registered in the system with his/her unique credentials.
+
 Responsibilities: Can create posts/comments, view posts/comments, upvote or downvote the posts/comments made by others, report posts/comments and update his account details.
 
 
 III. *Administrator* (Primary Actor): This actor administers the system.
+
 Responsibilities: Can take reported posts into context and remove post and/or user when necessary.
 
 
 <h4>3. Fully Dressed Use Cases:</h4>
 
 **Use case**: View post
+
 **Actor**: Guest User/Registered User
+
 **Precondition**: n/a
+
 
 **Main scenario**:
 1. System displays its homepage with existing posts submitted by other users.
@@ -36,7 +42,9 @@ Responsibilities: Can take reported posts into context and remove post and/or us
 ---
 
 **Use case**: Register
+
 **Actor**: Guest User
+
 **Precondition**:
 
 - User should not already have an account in the system.
@@ -62,7 +70,9 @@ Responsibilities: Can take reported posts into context and remove post and/or us
 
 
 **Use case**: Login
+
 **Actor**: Guest User
+
 **Precondition**:
 
 - User must have already registered in the system.
@@ -84,7 +94,9 @@ Responsibilities: Can take reported posts into context and remove post and/or us
 
 
 **Use case**: Create post
+
 **Actor**: Registered User
+
 **Precondition**: 
 
 - User must be logged in to the system.
@@ -101,7 +113,9 @@ Responsibilities: Can take reported posts into context and remove post and/or us
 
 
 **Use case**: Vote
+
 **Actor**: Registered User
+
 **Precondition**:
 
 - User must be logged in to the system.
@@ -115,7 +129,9 @@ Responsibilities: Can take reported posts into context and remove post and/or us
 
 
 **Use case**: Update user
+
 **Actor**: Registered User
+
 **Precondition**:
 
 - User must be logged in to the system.
@@ -132,7 +148,9 @@ Responsibilities: Can take reported posts into context and remove post and/or us
 
 
 **Use Case**: Comment on post
+
 **Actor**: Registered User
+
 **Precondition**:
 
 - User must be logged in to the system.
@@ -149,7 +167,9 @@ Responsibilities: Can take reported posts into context and remove post and/or us
 
 
 **Use Case**: Administer System
+
 **Actor**: Administrator
+
 **Precondition**: n/a
 
 
@@ -162,5 +182,7 @@ Responsibilities: Can take reported posts into context and remove post and/or us
 <h3>**Participation of group members**:</h3>
 
 For this assignment:
+
 **Dividing into sub-system**: Mikkel Djurhuus & Theis Kjeld Rye (50%)
+
 **Documentation**: Yoana Dandarova & Manish Shrestha (50%)
