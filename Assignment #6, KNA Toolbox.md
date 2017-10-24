@@ -8,7 +8,7 @@
 
 ![enter image description here](https://lh3.googleusercontent.com/M4NVl0gdzoM78eAe94zzrysYX_my4YKz7PrWuuT6FDeDyU9i3o6ZAuEEhf557rly8PH7DVSIurYmgw=s0 "Hacker News Clone &#40;3&#41;.png")
 
-<h4>2. Actors:
+<h4>2. Actors:</h4>
 
 I. *Guest User* (Primary Actor): An unregistered user using the system. 
 Responsibilities: Can view posts/comments, register as a user and login.
