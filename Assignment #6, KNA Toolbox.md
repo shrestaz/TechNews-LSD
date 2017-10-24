@@ -174,12 +174,12 @@ Responsibilities: Can take reported posts into context and remove post and/or us
 
 
 ----------
-<h4>**4. Sub-system Sequence Diagram**</h4>
+<h4>4. Sub-system Sequence Diagram</h4>
 
 //NEEDS TO BE DONE :P
 
 
-<h3>**Participation of group members**:</h3>
+<h3>Participation of group members:</h3>
 
 For this assignment:
 
