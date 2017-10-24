@@ -1,13 +1,13 @@
-###**Logical Data Model**
+<h3>**Logical Data Model**
 
 ![enter image description here](https://lh3.googleusercontent.com/dSab5TdOk7EGdpyLRvjyeeQw1X84oyNLr1kwZEqkZokImkodm4gAnUhVXiwPoM6NpTuIX0b2YuXpWg=s0 "Logical Data Model.png")
 
-###**Use Case Model**
-####**1. Use Case Diagram**
+<h3>**Use Case Model**
+<h4>**1. Use Case Diagram**
 
 ![enter image description here](https://lh3.googleusercontent.com/M4NVl0gdzoM78eAe94zzrysYX_my4YKz7PrWuuT6FDeDyU9i3o6ZAuEEhf557rly8PH7DVSIurYmgw=s0 "Hacker News Clone &#40;3&#41;.png")
 
-####**2. Actors:**
+<h4>**2. Actors:**
 
 I. *Guest User* (Primary Actor): An unregistered user using the system. 
 Responsibilities: Can view posts/comments, register as a user and login.
@@ -19,7 +19,7 @@ III. *Administrator* (Primary Actor): This actor administers the system.
 Responsibilities: Can take reported posts into context and remove post and/or user when necessary.
 
 
-####**3. Fully Dressed Use Cases:**
+<h4>**3. Fully Dressed Use Cases:**
 
 **Use case**: View post
 **Actor**: Guest User/Registered User
@@ -151,12 +151,13 @@ Responsibilities: Can take reported posts into context and remove post and/or us
 
 
 ----------
-####**4. Sub-system Sequence Diagram**
+<h4>**4. Sub-system Sequence Diagram**
 
 //NEEDS TO BE DONE :P
 
 
-###**Participation of group members**:
+<h3>**Participation of group members**:
+
 For this assignment:
 **Dividing into sub-system**: Mikkel Djurhuus & Theis Kjeld Rye (50%)
 **Documentation**: Yoana Dandarova & Manish Shrestha (50%)
