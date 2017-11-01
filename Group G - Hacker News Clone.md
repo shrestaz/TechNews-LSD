@@ -30,12 +30,14 @@ The API is working on port 3000. Jenkins handles the build of this application, 
 The Jenkins server is always running on port 9090. The credentials to access Jenkins is:
 
 > Username: root 
+
 > Password: root
 
 **Database**:
 To access the database through phpMyAdmin, use the port 8080. The database itself is working on port 3306. The credentials to access phpMyAdmin is:
 
 > Username: root
+
 > Password: root
 
 Note: Be careful how you use phpMyAdmin and do not grant any privileges or alter tables structures.
@@ -65,16 +67,13 @@ And the GitHub repository for the front-end will be added soon.
 The `docker-compose.yml` file is responsible for the initialization of the application. If you look closer into it, it defines the images (read: Docker Images above) to be dockerized, sets the environment and volume, links the services among each other and link the ports between the host and the containers.
 
 To start the application, which includes all the steps above, ssh onto the droplet and type the command: 
-
-> `docker-compose up -d`
+`docker-compose up -d`
 
   The `“-d”` flag allows it to run in the background.
 
 ![enter image description here](https://lh3.googleusercontent.com/dBeUwLRphkSmpr5cO7QQJzMJjuWn2P-wSKKWFHrQbWldr6JH4MAdvG_jSoQK_-QrJwLA_0mDAI2URw=s0 "docker-compose up.png")
 
-To check if it worked, you can check the processes with 
-
-> `docker ps`
+To check if it worked, you can check the processes with `docker ps`
 
 It also shows the linked ports in case you forget.
 
@@ -82,9 +81,7 @@ It also shows the linked ports in case you forget.
 
 
 
-And to stop the application, simply run 
-
-> `docker-compose down`
+And to stop the application, simply run `docker-compose down`
 
 ![enter image description here](https://lh3.googleusercontent.com/JguyS7LArrVuUt1yDlMH8Lo5_BIvxDNXj8CLzb_tcz1G2LxBSSoDvEmLT105MjtOdY8Rg36so-dalg=s0 "docker-compose down.png")
 
@@ -103,6 +100,7 @@ POST ROUTES http://188.226.163.242:3000/post/array   To post array of stories/po
 For using this route, please make sure you send JSON to our API. It probably is needed to specify in your header like so:
 
 > Accept   application/json 
+
 > Content-type application/json
 
 To be sure, before using any post route, please verify you have valid json. You can use this website to do validate your json. 
@@ -119,7 +117,7 @@ Please make sure, for the previous posts you use unique hannest_id. As our hanne
 
 http://188.226.163.242:3000/post/noid     To post story/post without hannest_id like this:
 > 
->  `{"post_title": "YoanaisOk", "post_text": "", "post_type": "story", "post_parent": -1, "username": "pg", "pwd_hash": "Y89KIJ3frM", "post_url": "http://ycombinator.com"}`
+  `{"post_title": "YoanaisOk", "post_text": "", "post_type": "story", "post_parent": -1, "username": "pg", "pwd_hash": "Y89KIJ3frM", "post_url": "http://ycombinator.com"}`
 
 GET ROUTES
 http://188.226.163.242:3000/post/ - To get all available stories/posts.
@@ -134,7 +132,7 @@ http://188.226.163.242:3000/post/116 - (116 being the id of story) Send JSON lik
 
     
 
-    > {"post_title": "HelloMuci", "post_text": "", "post_type": "story","post_parent": -1, "username": "pg", "pwd_hash": "Y89KIJ3frM", "post_url": "http://ycombinator.com"}
+    {"post_title": "HelloMuci", "post_text": "", "post_type": "story","post_parent": -1, "username": "pg", "pwd_hash": "Y89KIJ3frM", "post_url": "http://ycombinator.com"}
 
 We have successfully inserted around 340000 users in our db. Routes to manipulate with these users:
 
@@ -146,10 +144,10 @@ http://188.226.163.242:3000/user/      To post a user sending json like this:
 
  
 
->     {
->        "name": "Man",
->        "pwd": "jhdc"
->     }
+     {
+        "name": "Man",
+        "pwd": "jhdc"
+     }
 
 DELETE ROUTE
 http://l188.226.163.242:3000/user/Yoana     Yoana being the user you want to delete.
@@ -159,7 +157,11 @@ In case of feedback and/or troubleshooting, please contact one of the team membe
 
 ### **8. Team Members**:
 Yoana Georgieva Dandarova
+
 Manish Shrestha
+
 Mikkel Djurhuus
+
 Theis Kjeld Rye
+
 Rumyana Rumenova Vaseva
