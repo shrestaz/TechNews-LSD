@@ -1,4 +1,4 @@
-**Hacker News Clone - Group G**
+**Hacker News Clone**
 ---------------------------
 
 ### **1. Brief Overview:**
@@ -155,13 +155,4 @@ http://l188.226.163.242:3000/user/Yoana     Yoana being the user you want to del
 ### **7. Feedback and Troubleshooting**:
 In case of feedback and/or troubleshooting, please contact one of the team members. If it is regarding troubleshooting, please take note of the exception thrown.
 
-### **8. Team Members**:
-Yoana Georgieva Dandarova
 
-Manish Shrestha
-
-Mikkel Djurhuus
-
-Theis Kjeld Rye
-
-Rumyana Rumenova Vaseva
