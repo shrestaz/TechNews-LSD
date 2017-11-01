@@ -1,7 +1,7 @@
 **Hacker News Clone - Group G**
 ---------------------------
 
-####**Brief Overview:**
+#### **Brief Overview:**
 This is a clone application of the website HackerNews. There are 4 parts to this project which are all hosted on a droplet in DigitalOcean. Including these parts working together to make this application work, there is also Jenkins working on the same droplet as a Continuous Integration server.
 
 ![enter image description here](https://lh3.googleusercontent.com/C7Uu6IUDX3YYjc7OuDNnB0WwaPfDrtU_v9gGZ_mhscdEtg6MDHXzP7mV3vsG6CmfaPoF2QK746N2xA=s0 "Document 1 &#40;1&#41;.png")
@@ -19,7 +19,7 @@ As you can see from the figure above, our host IP is 188.226.163.242, which is t
 
 **Jenkins** - always running on the host which rebuilds the Node project when update is pushed on GitHub. (on port 9090)
 
-####**Access:**
+**Access:**
 **Droplet**: (188.226.163.242)
 To be able to gain access to the droplet via ssh, your machine’s public key needs to be added to the authorized list. Please contact one of the team members, with the public key ready, to be given access.
 
