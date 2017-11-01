@@ -92,16 +92,12 @@ And to stop the application, simply run
 
 Due to the front-end being under-development, the ways to interact with the API is with the help of Postman or something similar. GET requests can be handled by the browser itself.
 
-> GET ROUTE http://188.226.163.242:3000/status/          To check if our
-> system is alive.
-> 
-> GET ROUTE http://188.226.163.242:3000/latest/         To check latest
-> entry post.
-> 
-> POST ROUTES http://188.226.163.242:3000/post/array   To post array of
-> stories/posts like this:
-> 
->
+GET ROUTE http://188.226.163.242:3000/status/          To check if our system is alive.
+
+GET ROUTE http://188.226.163.242:3000/latest/         To check latest entry post.
+
+POST ROUTES http://188.226.163.242:3000/post/array   To post array of stories/posts like this:
+
      [{"post_title": "YoanaSuper", "post_text": "", "hanesst_id": 358, "post_type": "story", "post_parent": -1, "username": "pg", "pwd_hash": "Y89KIJ3frM", "post_url": "http://ycombinator.com"}]
 
 For using this route, please make sure you send JSON to our API. It probably is needed to specify in your header like so:
