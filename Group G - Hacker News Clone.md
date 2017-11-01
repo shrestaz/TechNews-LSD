@@ -1,7 +1,7 @@
 **Hacker News Clone - Group G**
 ---------------------------
 
-#### **Brief Overview:**
+### **1. Brief Overview:**
 This is a clone application of the website HackerNews. There are 4 parts to this project which are all hosted on a droplet in DigitalOcean. Including these parts working together to make this application work, there is also Jenkins working on the same droplet as a Continuous Integration server.
 
 ![enter image description here](https://lh3.googleusercontent.com/C7Uu6IUDX3YYjc7OuDNnB0WwaPfDrtU_v9gGZ_mhscdEtg6MDHXzP7mV3vsG6CmfaPoF2QK746N2xA=s0 "Document 1 &#40;1&#41;.png")
@@ -19,7 +19,7 @@ As you can see from the figure above, our host IP is 188.226.163.242, which is t
 
 **Jenkins** - always running on the host which rebuilds the Node project when update is pushed on GitHub. (on port 9090)
 
-**Access:**
+### **2. Access:**
 **Droplet**: (188.226.163.242)
 To be able to gain access to the droplet via ssh, your machine’s public key needs to be added to the authorized list. Please contact one of the team members, with the public key ready, to be given access.
 
@@ -40,7 +40,7 @@ To access the database through phpMyAdmin, use the port 8080. The database itsel
 
 Note: Be careful how you use phpMyAdmin and do not grant any privileges or alter tables structures.
 
-#### **Docker Images**:
+### **3. Docker Images**:
 If you check the `docker-compose.yml` file, there are 3 services defined. *[This will be updated with the 4th service which will be the front-end.]* 
 
 The image for phpmyadmin is the official image as is. `[dockerhub image name: phpmyadmin/phpmyadmin]`
@@ -52,7 +52,7 @@ The third image is the API of the project which is a node application, also host
 
 [(Quick access to above images.) The images of database and API are hosted here.](https://hub.docker.com/u/thatonedroid/)
 
-#### **Data, Files and Projects**:
+### **4. Data, Files and Projects**:
 Since the docker containers depends on volumes to save its data, the data for the database is saved on the path /root/mysql/manish on the droplet. You will not have to (or you can’t) do anything regarding this, but it is just an information on where the volume is located. (Also, the naming could be done better, we realize that.)
 
 The database also needs to be structured when the container is created from the official image. This is initiated by the file dbseed.sql located at /root/mysql/ on the droplet.
@@ -61,7 +61,7 @@ The database also needs to be structured when the container is created from the 
 
 And the GitHub repository for the front-end will be added soon.
 
-#### **Starting/Stopping of the application**:
+### **5. Starting/Stopping of the application**:
 The `docker-compose.yml` file is responsible for the initialization of the application. If you look closer into it, it defines the images (read: Docker Images above) to be dockerized, sets the environment and volume, links the services among each other and link the ports between the host and the containers.
 
 To start the application, which includes all the steps above, ssh onto the droplet and type the command: 
@@ -88,7 +88,7 @@ And to stop the application, simply run
 
 ![enter image description here](https://lh3.googleusercontent.com/JguyS7LArrVuUt1yDlMH8Lo5_BIvxDNXj8CLzb_tcz1G2LxBSSoDvEmLT105MjtOdY8Rg36so-dalg=s0 "docker-compose down.png")
 
-#### **Node API description**:
+### **6. Node API description**:
 
 Due to the front-end being under-development, the ways to interact with the API is with the help of Postman or something similar. GET requests can be handled by the browser itself.
 
@@ -158,10 +158,10 @@ http://188.226.163.242:3000/user/      To post a user sending json like this:
 DELETE ROUTE
 http://l188.226.163.242:3000/user/Yoana     Yoana being the user you want to delete.
 
-#### **Feedback and Troubleshooting**:
+### **7. Feedback and Troubleshooting**:
 In case of feedback and/or troubleshooting, please contact one of the team members. If it is regarding troubleshooting, please take note of the exception thrown.
 
-#### **Team Members**:
+### **8. Team Members**:
 Yoana Georgieva Dandarova
 Manish Shrestha
 Mikkel Djurhuus
