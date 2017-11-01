@@ -66,7 +66,7 @@ And the GitHub repository for the front-end will be added soon.
 ### **5. Starting/Stopping of the application**:
 The `docker-compose.yml` file is responsible for the initialization of the application. If you look closer into it, it defines the images (read: Docker Images above) to be dockerized, sets the environment and volume, links the services among each other and link the ports between the host and the containers.
 
-To start the application, which includes all the steps above, ssh onto the droplet and type the command: 
+To start the application, which includes all the steps above, ssh onto the droplet and run the command: 
 `docker-compose up -d`
 
   The `“-d”` flag allows it to run in the background.
