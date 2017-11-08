@@ -171,7 +171,7 @@ Rumyana Rumenova Vaseva
 
 #### **Monitoring**
 
-[Link to Grafana. 	  //Also in the documentation](http://188.226.163.242:4000/dashboard/db/nodeapi-monitoring?from=1510112371364&to=1510173614756&orgId=11)
+[Link to Grafana. 	  //Also in the documentation](http://188.226.163.242:4000/dashboard/db/nodeapi-monitoring?from=1510112371364&to=1510173614756&orgId=1)
 
 [Link to Documentation](https://github.com/datsoftlyngby/soft2017fall-lsd-teaching-material/blob/master/assignments/07-Assignment.md)
 
