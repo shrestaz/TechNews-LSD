@@ -1,6 +1,6 @@
 # Service Level Agreement
 
-Contributions:  Yoana Dandarova & Manish Shrestha
+Contributors:  Yoana Dandarova & Manish Shrestha
 
 
 ----------
