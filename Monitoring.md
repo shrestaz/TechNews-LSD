@@ -1,6 +1,4 @@
-# Service Level Agreement
-
-#### Group G
+#Service Level Agreement
 
 Contributions:  Yoana Dandarova & Manish Shrestha
 
@@ -26,3 +24,10 @@ Grafana linked to the project portrays 4 graphs:
  2. Total Active Requests
  3. Total CPU process usage
  4. HTTP request duration (in ms)
+
+#### **Links to Prometheus and Grafana:**
+
+[**Prometheus works on port 9000**](http://188.226.163.242:9000/)
+
+
+[**Grafana works on port 4000**](http://188.226.163.242:4000/)
