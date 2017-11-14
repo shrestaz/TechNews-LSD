@@ -169,5 +169,5 @@ Manish Shrestha (cph-ms659@cphbusiness.dk)
 
 [Link to Grafana. 	  //Also in the documentation](http://188.226.163.242:4000/dashboard/db/nodeapi-monitoring?orgId=1&from=1510670499873&to=1510692099873)
 
-[Link to Documentation of Monitoring](https://github.com/datsoftlyngby/soft2017fall-lsd-teaching-material/blob/master/assignments/07-Assignment.md)
+[Link to Documentation of Monitoring](https://github.com/shrestaz/TechNews-LSD/blob/master/Monitoring.md)
 
