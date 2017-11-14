@@ -19,7 +19,7 @@ As you can see from the figure above, our host IP is 188.226.163.242, which is t
 
 **Jenkins** - always running on the host which rebuilds the Node project when update is pushed on GitHub. (on port 9090)
 
-####**Access:**
+#### **Access:**
 **Droplet**: (188.226.163.242)
 To be able to gain access to the droplet via ssh, your machine’s public key needs to be added to the authorized list. Please contact one of the team members, with the public key ready, to be given access.
 
@@ -164,15 +164,11 @@ In case of feedback and/or troubleshooting, please contact one of the team membe
 #### **Team Members**:
 Yoana Georgieva Dandarova
 Manish Shrestha
-Mikkel Djurhuus
-Theis Kjeld Rye
-Rumyana Rumenova Vaseva
 
 
 #### **Monitoring**
 
-[Link to Grafana. 	  //Also in the documentation](http://188.226.163.242:4000/dashboard/db/nodeapi-monitoring?from=1510112371364&to=1510173614756&orgId=1)
+[Link to Grafana. 	  //Also in the documentation](http://188.226.163.242:4000/dashboard/db/nodeapi-monitoring?orgId=1&from=1510670499873&to=1510692099873)
 
-[Link to Documentation](https://github.com/datsoftlyngby/soft2017fall-lsd-teaching-material/blob/master/assignments/07-Assignment.md)
+[Link to Documentation of Monitoring](https://github.com/datsoftlyngby/soft2017fall-lsd-teaching-material/blob/master/assignments/07-Assignment.md)
 
-*This document and the image on the top will be updated to accommodate monitoring by Friday, 10th Nov. Sorry for the delay but life's getting on the way.* 
