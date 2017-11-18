@@ -3,7 +3,7 @@ Logging and post-mortem analysis
 
 **TL;DR: Logging works locally only. ~~and Alerts throws some exception resulting in only partly helpful.~~**
 
-Update: Alert is working as expected. Grafana docker image had bugs which has been fixed by the original developers.
+Update (18/11): Alert is working as expected. Grafana docker image had bugs which has been fixed by the original developers.
 
 
 ### **Logging**
