@@ -46,7 +46,7 @@ All the alerts are directed to Slack. We also tried to implement email alerts wh
 Albeit incomplete/broken implementation of logging, our operating group hasn’t set up their alerts in our monitoring platform. This incomplete setup resulted in no post-mortem report to be possibly created.
 
 
-Update 11/19/2017.
+### ** Update 11/19/2017. **
 
 Ports:
 5601 : Kibana
