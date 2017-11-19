@@ -44,3 +44,23 @@ All the alerts are directed to Slack. We also tried to implement email alerts wh
 
 ### **Post-mortem report**
 Albeit incomplete/broken implementation of logging, our operating group hasn’t set up their alerts in our monitoring platform. This incomplete setup resulted in no post-mortem report to be possibly created.
+
+
+Update 11/19/2017.
+
+Ports:
+5601 : Kibana
+9200 : ElasticSearch
+9700 : LogStash
+Indices can be listed on: http://159.89.2.54:9200/_cat/indices?v for Kibana
+
+
+
+There has been another droplet created at http://159.89.2.54. The sebp/elk image and its logstash configuration files have been added as well. The docker-compose.yml file that has been used is the same as Jen’s from https://github.com/datsoftlyngby. Our logging is on different droplet in case http://188.226.163.242 crashes we have the logging system alive on different place and can check our log messages. If you click on http://159.89.2.54:5601 you will see our Kibana interface showing what happened to the system. 
+The node.js server we use  has been modified. We added log4js configuration file and log information when different routes are being used. Despite making this working we had the ambition to write our logs to files but this did not work. 
+
+Checking our last changes to NodeServer please go here:
+
+https://github.com/expert26111/NodeServer
+
+
