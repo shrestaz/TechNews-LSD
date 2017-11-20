@@ -3,7 +3,7 @@ Assignment 10 - Group G
 
 ### **Scaling:**
 
-In the following screenshot, we created services in docker swarm. Its very self explanatory.
+In the following screenshots, we deployed services in a docker swarm. Its very self explanatory.
 
 ELK, Prometheus and Grafana are replicated once only since they are only logging and monitoring the system. When the system is under load, they will not be affected, hence scaling is not required for them. 
 
