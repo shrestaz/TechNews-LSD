@@ -2,6 +2,20 @@ Assignment 10 - Group G
 -------------
 
 ### **Scaling:**
+#### **Part 1: Questions answered**
+
+Docker Swarm is a clustering and scheduling tool for Docker containers. With Swarm, IT administrators and developers can establish and manage a cluster of Docker nodes as a single virtual system.  Docker swarm declares one Node/VM/Droplet as manager and the others are workers. Usually workers can not manage containers that is why the commands:
+
+    docker node ls 
+    docker service ls 
+
+can not  be runned by a worker node but only from manager.
+
+The good thing about docker swarm is that when we want to scale up or down the manager automatically adapts by adding or removing tasks/containers. For example, if you set up a service to run 10 replicas of a container, and a worker machine hosting two of those replicas crashes, the manager will create two new replicas to replace the replicas that crashed. The swarm manager assigns the new replicas to workers that are running and available.  Docker swarm is really good for our load balancing. Load balancing is when we need to distribute the traffic across all the instances of this service. Docker Swarm allows us to seamlessly scale and distribute docker work load to a cluster of hosts. 
+
+One of the key advantages of swarm services over standalone containers is that you can modify a service’s configuration, including the networks and volumes it is connected to, without the need to manually restart the service. Docker will update the configuration, stop the service tasks with the out of date configuration, and create new ones matching the desired configuration. That is why for example when we decide to add extra volume/disk space to one of our droplets does not matter worker or manager our service will not be stopped even for a moment as when we use ordinary containers. That is how we save our problem with congestion.  
+
+#### **Part 2: Screenshots**
 
 In the following screenshots, we deployed services in a docker swarm. Its very self explanatory.
 
