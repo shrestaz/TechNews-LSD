@@ -48,4 +48,5 @@ Finally, when we check the process of the docker swarm, our only scaled service,
 
 
 > Command used to deploy services on a swarm cluster:
+> 
 > `docker stack deploy -c docker-compose.yml groupG`
