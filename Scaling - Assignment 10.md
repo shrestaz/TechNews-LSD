@@ -7,7 +7,7 @@ In the following screenshot, we created services in docker swarm. Its very self 
 
 ELK, Prometheus and Grafana are replicated once only since they are only logging and monitoring the system. When the system is under load, they will not be affected, hence scaling is not required for them. 
 
-The 4th service is the webservice which is our Nodejs API of the system. Since this handles all the requests, this has can be scaled to improve stablility and performance. It has been replicated 5 times to be split among the manager and its 2 workers.
+The 4th service is the webservice which is our Nodejs API of the system. Since this handles all the requests, this has can be scaled to improve stablility and performance. It has 5 replicas to be split among the manager and its 2 workers.
 
     docker service ls
 
@@ -37,7 +37,7 @@ When listing the docker networks, we can see that the third network named "group
 ----------
 
 
-Finally, when we check the process of the docker swarm, our only scaled service, groupG_webserver, is replicated 5 times as intended and has been split among the manager and its 2 workers.
+Finally, when we check the process of the docker swarm, our only scaled service, "groupG_webserver" has 5 replicas, as intended, and has been split among the manager and its 2 workers.
 
     docker stack ps groupG
 
