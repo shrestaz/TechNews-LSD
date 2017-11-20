@@ -42,3 +42,10 @@ Finally, when we check the process of the docker swarm, our only scaled service,
     docker stack ps groupG
 
 ![enter image description here](https://lh3.googleusercontent.com/9_H6pVeKQeZLvaBKsR3JaAFoEFXpYoR7TS_HhGqM2VxAgzQipk_fk-6eV3gmY3PTJHpYmJNmnLzi1Q=s0 "docker stack ps.png")
+
+
+----------
+
+
+> Command used to deploy services on a swarm cluster:
+> `docker stack deploy -c docker-compose.yml groupG`
