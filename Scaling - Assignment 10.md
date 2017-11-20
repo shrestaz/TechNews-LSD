@@ -15,6 +15,10 @@ The good thing about docker swarm is that when we want to scale up or down the m
 
 One of the key advantages of swarm services over standalone containers is that you can modify a service’s configuration, including the networks and volumes it is connected to, without the need to manually restart the service. Docker will update the configuration, stop the service tasks with the out of date configuration, and create new ones matching the desired configuration. That is why for example when we decide to add extra volume/disk space to one of our droplets does not matter worker or manager our service will not be stopped even for a moment as when we use ordinary containers. That is how we save our problem with congestion.  
 
+
+----------
+
+
 #### **Part 2: Screenshots**
 
 In the following screenshots, we deployed services in a docker swarm. Its very self explanatory.
