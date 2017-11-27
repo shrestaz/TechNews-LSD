@@ -12,7 +12,7 @@ Due to the regional restrictions of our DigitalOcean droplet based on Amsterdam,
 
 	 b. Navigate to the droplet on a brower. Go to Snapshots panel and click on Take live snapshot.
  
-	 - *Note: This takes some time to complete, depending upon the size of the data. For us, it took 5-7 minutes with ~20 GB of data.*
+	 - *Note: This takes some time to complete, depending upon the size of the data. For us, it took 5-7 minutes with ~20GB of data.*
 
 2. Once the snapshot is saved, we should make it available in other regions where “additional volumes” service was available. For us, Frankfurt suited best, but there are many others to choose from.
 
