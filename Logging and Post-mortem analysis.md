@@ -90,6 +90,7 @@ We are going to increase the space for post_text and post_title, so we can get m
 ### **Update 11/27/2017**
 
 Postmorten analysis
+
 The db container has been stopped with the command:
 docker  stop idofcontainer
 
@@ -100,6 +101,9 @@ docker-compose  restart,
 so we have  our containers restarted and fully functioning system again.  Kibana showed  this message around 100 times:
 
 ![](https://github.com/shrestaz/TechNews-LSD/blob/master/connrefused.png)
+
+Also more detailed explanation of the error from kibana:
+
 
 So we see if the db component of our system is not working for even a short time we have around 100 posts lost.
 We have not received any message that our system is down from our operational group that is why we simulated the system going down. Also our operational group did not try to set any alarms in our grafana. We did however have been reached by them specially Ben Jones who pointed out that our hannest_id was json but should be just an integer so we changed it.  
