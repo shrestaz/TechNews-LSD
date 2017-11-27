@@ -69,7 +69,10 @@ ELK Stack analysis
 It is worth analysing our system even when it is fully functioning because the front-end of Kibana give us the ability to see interesting things and troubleshoot some problems.
 We noticed:
 
-certain limitations as the size of post_text is too long sometimes for our db to digest. 
+certain limitations as the size of post_text is too long sometimes for our db to digest.
+
+![](https://github.com/shrestaz/TechNews-LSD/blob/master/post_text.png)
+
 Also we noticed that post_title is too short.
 
 ![](https://github.com/shrestaz/TechNews-LSD/blob/master/post_title.png)
