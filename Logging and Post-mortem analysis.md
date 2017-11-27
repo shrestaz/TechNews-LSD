@@ -71,7 +71,9 @@ We noticed:
 
 certain limitations as the size of post_text is too long sometimes for our db to digest. 
 Also we noticed that post_title is too short.
-https://github.com/shrestaz/TechNews-LSD/blob/master/post_title.png
+
+![]{https://github.com/shrestaz/TechNews-LSD/blob/master/post_title.png}
+
 Another interesting thing worth mentioning is interesting reason why some posts do not make to the db.
 
 This problem exists because in our implementation of db (mysql) we connected the post table and user table with foreign keys. User table has a primary key: username and pwd_hash which are referenced in Post table. It appears that some of the posts do not have valid username and pwd_hash, because we do not have them inserted in our db. We have 340000 users but we did not add the rest 120000 more users. 
