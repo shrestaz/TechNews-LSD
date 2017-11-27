@@ -72,7 +72,7 @@ We noticed:
 certain limitations as the size of post_text is too long sometimes for our db to digest. 
 Also we noticed that post_title is too short.
 
-![]{https://github.com/shrestaz/TechNews-LSD/blob/master/post_title.png}
+![](https://github.com/shrestaz/TechNews-LSD/blob/master/post_title.png)
 
 Another interesting thing worth mentioning is interesting reason why some posts do not make to the db.
 
