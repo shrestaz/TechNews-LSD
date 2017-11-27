@@ -27,7 +27,7 @@ Grafana linked to the project portrays 4 graphs:
 
 ### **Links to Prometheus and Grafana:**
 
-[**Prometheus works on port 9000**](http://188.226.163.242:9000/)
+[**Prometheus works on port 9000**](http://207.154.245.251:9000/)
 
 
-[**Grafana works on port 4000**](http://188.226.163.242:4000/)
+[**Grafana works on port 4000**](http://207.154.245.251:4000/)
