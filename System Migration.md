@@ -5,12 +5,12 @@ Due to the regional restrictions of our DigitalOcean droplet based on Amsterdam,
 
  1. Create a live snapshot of the existing system.
  
- a. Power off the droplet, to ensure data consistency, from the terminal
+	 a. Power off the droplet, to ensure data consistency, from the terminal
 
     ssh root@188.226.163.242
     poweroff -h now
 
- b. Navigate to the droplet on a brower. Go to Snapshots panel and click on Take live snapshot.
+	 b. Navigate to the droplet on a brower. Go to Snapshots panel and click on Take live snapshot.
  
  - *Note: This takes some time to complete, depending upon the size of the data. For us, it took 5-7 minutes with ~20 GB of data.*
 
