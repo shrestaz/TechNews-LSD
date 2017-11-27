@@ -109,7 +109,9 @@ Also more detailed explanation of the error from kibana:
 So we see if the db component of our system is not working for even a short time we have around 100 posts lost.
 We have not received any message that our system is down from our operational group that is why we simulated the system going down. Also our operational group did not try to set any alarms in our grafana. We did however have been reached by them specially Ben Jones who pointed out that our hannest_id was json but should be just an integer so we changed it.  
 
-
+### **Update 11/27/2017** 
+After droplet location has been moved we realised we have to add another host in Kibana so we receive the logs from the new droplet 
+but somehow it authomatically has been done for us. We can not explain this to ourselves.
   
 
 
