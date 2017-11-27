@@ -63,4 +63,25 @@ Checking our last changes to NodeServer please go here:
 
 https://github.com/expert26111/NodeServer
 
+### **Update 11/27/2017**
+ELK Stack analysis
+
+It is worth analysing our system even when it is fully functioning because the front-end of Kibana give us the ability to see interesting things and troubleshoot some problems.
+We noticed:
+
+certain limitations as the size of post_text is too long sometimes for our db to digest. 
+Also we noticed that post_title is too short.
+
+Another interesting thing worth mentioning is interesting reason why some posts do not make to the db.
+
+This problem exists because in our implementation of db (mysql) we connected the post table and user table with foreign keys. User table has a primary key: username and pwd_hash which are referenced in Post table. It appears that some of the posts do not have valid username and pwd_hash, because we do not have them inserted in our db. We have 340000 users but we did not add the rest 120000 more users. 
+
+
+It has been made a decision our droplet location to be changed because it used to be in Amsterdam where the new volume option is not offered so we could not extra space. So that is why we decided to move it to Frankfurt.
+We are going to increase the space for post_text and post_title, so we can get more valid posts in our system right now. Post_title from 45 characters to 250 and post_text from 400 to 700. 
+
+
+  
+
+
 
