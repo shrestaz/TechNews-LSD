@@ -104,6 +104,9 @@ Answer:
 JSON Web Tokens (JWT) “jot”, the information transmitted is via JSON. JWT carry all the information necessary within itself: payload, header, a signature. They are used inside the HTTP header.
 Payload: This is the information we want to transmit(JWT claims) and other information about our token. 
 Signature: made of header, payload, secret and hashes them. The secret is the signature held by the server. This is the way that our server will be able to verify existing tokens. You can use the token in a URL,Post or an HTTP header.
+For example right now we can check if user is authenticated :
+
+![](https://github.com/shrestaz/TechNews-LSD/blob/master/requesttoken.png)
 
 During development I enabled Node Core library
 Go to File -> Settings -> Languages & Frameworks -> Node.js and NPM
