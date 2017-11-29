@@ -83,3 +83,104 @@ The following are the steps we followed to do exactly that.
 ![enter image description here](https://lh3.googleusercontent.com/JaK4N9hprii_WCGLZ9LoV9SptLohBgn9zZSEOmH7qar8hKKXeyEI5gf7lTmpTUvLsets4xsJoFkvmA=s0 "4 Output.png")
 
 7. Go through the output file which logged all the attacks and check for found vulnerabilities.
+
+
+
+###Authentification
+
+This guide is written in order to provide information how jsonwebtoken authetification was set to our NodeServer.
+
+Good links I followed:
+
+https://scotch.io/tutorials/the-anatomy-of-a-json-web-token
+https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication
+https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens
+https://github.com/dwyl/learn-json-web-tokens
+
+
+Question about authentication:
+How to secure my own API?
+Answer:
+JSON Web Tokens (JWT) “jot”, the information transmitted is via JSON. JWT carry all the information necessary within itself: payload, header, a signature. They are used inside the HTTP header.
+Payload: This is the information we want to transmit(JWT claims) and other information about our token. 
+Signature: made of header, payload, secret and hashes them. The secret is the signature held by the server. This is the way that our server will be able to verify existing tokens. You can use the token in a URL,Post or an HTTP header.
+
+During development I enabled Node Core library
+Go to File -> Settings -> Languages & Frameworks -> Node.js and NPM
+Because it was giving me that module is unresolved variable.
+
+During development I installed npm install @types/express
+Because it was giving me that post,get,put,delete method are unresolved.
+Authentification was added to our post route for posting hackernews stories, the ip from which Helge is posting has been permitted everybody else who tries will be checked if he/she has token for authentification.
+if(req.ip.toString().includes('138.68.91.198') )
+
+This line checks exactly if the one who tries to post is Helge. If not 
+if(req.ip.toString().includes('138.68.91.198') )
+{
+  // console.log('The ip is  ',req.ip.toString());
+   net.info('Posting a post from Helge WITH IP ',req.ip.toString());
+   res.status(201).json(req.body);
+
+}else{
+
+   //net.info('I am inside else blog');
+   ///console.log('The ip is  ',req.ip.toString());
+   var token = req.body.token || req.query.token || req.headers['x-access-token'];
+   if (token)
+   {
+
+       // verifies secret and checks exp
+       jwt.verify(token, config.secret , function(err, decoded)
+       {
+           if (err)
+           {
+               return res.json({ success: false, message: 'Failed to authenticate token.' });
+           } else
+           {
+               // if everything is good, save to request for use in other routes
+               req.decoded = decoded;
+               net.info('Posting a post from authenticated user');
+               res.status(201).json(req.body);
+               //next();
+           }
+       });
+
+   } else
+   {
+
+       // if there is no token
+       // return an error
+       net.info('Trying to post a post from non authenticated user');
+       return res.status(403).send({
+           success: false,
+           message: 'No token provided.'
+       });
+
+   }
+}
+
+
+
+
+The code requires authentification token to be sent from the front-end client if such has not been sent gives the message:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
