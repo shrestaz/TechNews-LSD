@@ -104,7 +104,7 @@ Answer:
 JSON Web Tokens (JWT) “jot”, the information transmitted is via JSON. JWT carry all the information necessary within itself: payload, header, a signature. They are used inside the HTTP header.
 Payload: This is the information we want to transmit(JWT claims) and other information about our token. 
 Signature: made of header, payload, secret and hashes them. The secret is the signature held by the server. This is the way that our server will be able to verify existing tokens. You can use the token in a URL,Post or an HTTP header.
-For example right now we can check if user is authenticated :
+For example right now we can check if user exists and provide him/her with a token  :
 
 ![](https://github.com/shrestaz/TechNews-LSD/blob/master/requesttoken.png)
 
@@ -170,6 +170,7 @@ This line checks exactly if the one who tries to post is Helge. If not
 
 The code requires authentification token to be sent from the front-end client if such has not been sent gives the message:
 
+![](https://github.com/shrestaz/TechNews-LSD/blob/master/secureroute.png)
 
 
 
