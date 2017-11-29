@@ -1,8 +1,16 @@
 Security
 --------
 
-A definition of your assets and the threat model of your project
-A risk matrix of your project
+### Assets and Threats
+This section defines the assets and threats within our system.
+
+**Assets**: Database, Source Code, User Information, Documentation
+
+**Threats**: Other Groups, Script Kiddies, Hackers, Bugs/System Vulnerabilities
+
+
+### Risk Matrix
+![enter image description here](https://lh3.googleusercontent.com/x8qZJQKUJglpD_SPWBY68v6l9KQjL9XreSbI3KEwXO55XoSpIlF65YozSaVd1AI_EhBiyVOxGQauNg=s0 "Risk Matrix.png")
 
 
 ----------
@@ -99,6 +107,7 @@ https://github.com/dwyl/learn-json-web-tokens
 
 
 Question about authentication:
+
 How to secure my own API?
 Answer:
 JSON Web Tokens (JWT) “jot”, the information transmitted is via JSON. JWT carry all the information necessary within itself: payload, header, a signature. They are used inside the HTTP header.
@@ -116,11 +125,11 @@ During development I installed npm install @types/express
 Because it was giving me that post,get,put,delete method are unresolved.
 Authentification was added to our post route for posting hackernews stories, the ip from which Helge is posting has been permitted everybody else who tries will be checked if he/she has token for authentification.
 
-      if(req.ip.toString().includes('138.68.91.198') )
+`if(req.ip.toString().includes('138.68.91.198') )`
 
 This line checks exactly if the one who tries to post is Helge. If not 
 
-
+```
       if(req.ip.toString().includes('138.68.91.198') )
     {
       // console.log('The ip is  ',req.ip.toString());
@@ -164,30 +173,10 @@ This line checks exactly if the one who tries to post is Helge. If not
 
        }
     }
-
+```
 
 
 
 The code requires authentification token to be sent from the front-end client if such has not been sent gives the message:
 
 ![](https://github.com/shrestaz/TechNews-LSD/blob/master/secureroute.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
