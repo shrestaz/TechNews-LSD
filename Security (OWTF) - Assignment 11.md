@@ -14,10 +14,12 @@ The following are the steps we followed to do exactly that.
 1. We decided to run the framework in its native environment, where it was built. So we ran a live version of Kali Linux and followed the procedure from the website to install OWTF.
 2. The next step was to write the output of the script from the terminal window to a text file for later use. We created a simple python script, which when executed, starts OWTF on the defined target (Group L’s IP address and port number in this case) and writes every output on “output.txt” file. The following is a snippet of that script.
 
-    #!/usr/bin/env python
+```
+#!/usr/bin/env python
     import subprocess
     with open("output.txt", "w+") as output:
         subprocess.call(["./owtf/owtf.py", "165.227.151.217:8080"], stdout=output);
+```
 
 3. Run ./execute.sh (the name of the python script)
 
