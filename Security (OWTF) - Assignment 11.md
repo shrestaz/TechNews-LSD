@@ -4,13 +4,14 @@ Security
 ### Assets and Threats
 This section defines the assets and threats within our system.
 
-**Assets**: Database, Source Code, User Information, Documentation
+**Assets**: Database, Source Code, User Information, Documentation, Docker images and containers, Digital-Ocean Droplets, Monitoring system
 
 **Threats**: Other Groups, Script Kiddies, Hackers, Bugs/System Vulnerabilities
 
 
 ### Risk Matrix
-![enter image description here](https://lh3.googleusercontent.com/x8qZJQKUJglpD_SPWBY68v6l9KQjL9XreSbI3KEwXO55XoSpIlF65YozSaVd1AI_EhBiyVOxGQauNg=s0 "Risk Matrix.png")
+![enter image description here](https://lh3.googleusercontent.com/oqTnT9v9qdlU2jOdfZreQq0TlsoYy4wfXTTEV5zRQyVjIlm22SXz_5M0snEOaFpG6Q86kyysH7uyMQ=s0 "Screenshot from 2017-11-29 17-09-52.png")
+
 
 
 ----------
