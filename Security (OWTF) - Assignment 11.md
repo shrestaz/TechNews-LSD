@@ -112,7 +112,8 @@ Because it was giving me that module is unresolved variable.
 During development I installed npm install @types/express
 Because it was giving me that post,get,put,delete method are unresolved.
 Authentification was added to our post route for posting hackernews stories, the ip from which Helge is posting has been permitted everybody else who tries will be checked if he/she has token for authentification.
-if(req.ip.toString().includes('138.68.91.198') )
+
+      if(req.ip.toString().includes('138.68.91.198') )
 
 This line checks exactly if the one who tries to post is Helge. If not 
 
