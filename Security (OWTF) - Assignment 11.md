@@ -16,7 +16,7 @@ The following are the steps we followed to do exactly that.
 
     #!/usr/bin/env python
     import subprocess
-	with open("output.txt", "w+") as output:
+    with open("output.txt", "w+") as output:
         subprocess.call(["./owtf/owtf.py", "165.227.151.217:8080"], stdout=output);
 
 3. Run ./execute.sh (the name of the python script)
@@ -38,4 +38,3 @@ The following are the steps we followed to do exactly that.
 
 7. Go through the output file which logged all the attacks and check for found vulnerabilities.
 
-> 
