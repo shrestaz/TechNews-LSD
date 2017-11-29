@@ -39,6 +39,9 @@ OWTF took around an hour to complete the test on the target (Group L: 165.227.15
 > 5. [93m[*] + OSVDB-13978: /cgi-local/ibill.pm: iBill.pm is installed. This may allow **brute forcing of passwords**.
 
 
+----------
+
+
 As one can see, this is only a handful of vulnerabilities found. If the system was used in production level for a real business, it would be catastrophic unless action is taken.
 
 
