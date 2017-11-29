@@ -10,7 +10,7 @@ A risk matrix of your project
 ## Offensive Web Testing Framework (OWTF):
 
 ### Vulnerabilities found:
-[**Click me for the complete output of OWTF.**(https://drive.google.com/file/d/1qytd1t8xqFAMeaxGFue2bNDPJxReRZTF/view?usp=sharing)
+[**Click me for the complete output of OWTF.**](https://drive.google.com/file/d/1qytd1t8xqFAMeaxGFue2bNDPJxReRZTF/view?usp=sharing)
 
 OWTF took around an hour to complete the test on the target (Group L: 165.227.151.217:8080), and the output file is very extensive and ~50MB in size. Therefore, we skimmed through it and are highlighting only a few. These are the direct output from the test.
 
