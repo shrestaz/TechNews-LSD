@@ -115,19 +115,21 @@ Authentification was added to our post route for posting hackernews stories, the
 if(req.ip.toString().includes('138.68.91.198') )
 
 This line checks exactly if the one who tries to post is Helge. If not 
-if(req.ip.toString().includes('138.68.91.198') )
-{
-  // console.log('The ip is  ',req.ip.toString());
-   net.info('Posting a post from Helge WITH IP ',req.ip.toString());
-   res.status(201).json(req.body);
 
-}else{
 
-   //net.info('I am inside else blog');
-   ///console.log('The ip is  ',req.ip.toString());
-   var token = req.body.token || req.query.token || req.headers['x-access-token'];
-   if (token)
-   {
+      if(req.ip.toString().includes('138.68.91.198') )
+    {
+      // console.log('The ip is  ',req.ip.toString());
+       net.info('Posting a post from Helge WITH IP ',req.ip.toString());
+       res.status(201).json(req.body);
+
+    }else{
+
+       //net.info('I am inside else blog');
+       ///console.log('The ip is  ',req.ip.toString());
+       var token = req.body.token || req.query.token || req.headers['x-access-token'];
+       if (token)
+       {
 
        // verifies secret and checks exp
        jwt.verify(token, config.secret , function(err, decoded)
@@ -145,8 +147,8 @@ if(req.ip.toString().includes('138.68.91.198') )
            }
        });
 
-   } else
-   {
+       } else
+       {
 
        // if there is no token
        // return an error
@@ -156,8 +158,8 @@ if(req.ip.toString().includes('138.68.91.198') )
            message: 'No token provided.'
        });
 
-   }
-}
+       }
+    }
 
 
 
