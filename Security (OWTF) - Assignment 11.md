@@ -86,7 +86,7 @@ The following are the steps we followed to do exactly that.
 
 
 
-###Authentification
+### Authentication
 
 This guide is written in order to provide information how jsonwebtoken authetification was set to our NodeServer.
 
