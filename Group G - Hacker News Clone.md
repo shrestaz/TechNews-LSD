@@ -19,7 +19,7 @@ As you can see from the figure above, our host IP is 207.154.245.251, which is t
 
 **Jenkins** - always running on the host which rebuilds the Node project when update is pushed on GitHub. (on port 9090)
 
-####**Access:**
+#### **Access:**
 **Droplet**: (207.154.245.251)
 To be able to gain access to the droplet via ssh, your machine’s public key needs to be added to the authorized list. Please contact one of the team members, with the public key ready, to be given access.
 
