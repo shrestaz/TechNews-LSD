@@ -66,7 +66,7 @@ The `docker-compose.yml` file is responsible for the initialization of the appli
 
 To start the application, which includes all the steps above, ssh onto the droplet and type the command: 
 
-> `docker-compose up -d`
+ `docker-compose up -d`
 
   The `“-d”` flag allows it to run in the background.
 
@@ -74,7 +74,7 @@ To start the application, which includes all the steps above, ssh onto the dropl
 
 To check if it worked, you can check the processes with 
 
-> `docker ps`
+ `docker ps`
 
 It also shows the linked ports in case you forget.
 
@@ -84,7 +84,7 @@ It also shows the linked ports in case you forget.
 
 And to stop the application, simply run 
 
-> `docker-compose down`
+ `docker-compose down`
 
 ![enter image description here](https://lh3.googleusercontent.com/JguyS7LArrVuUt1yDlMH8Lo5_BIvxDNXj8CLzb_tcz1G2LxBSSoDvEmLT105MjtOdY8Rg36so-dalg=s0 "docker-compose down.png")
 
