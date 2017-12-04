@@ -174,5 +174,3 @@ Rumyana Rumenova Vaseva
 [Link to Grafana. 	  //Also in the documentation](http://207.154.245.251:4000/dashboard/db/nodeapi-monitoring?from=1510112371364&to=1510173614756&orgId=11)
 
 [Link to Documentation](https://github.com/shrestaz/TechNews-LSD/blob/master/Monitoring.md)
-
-*This document and the image on the top will be updated to accommodate monitoring by Friday, 10th Nov. Sorry for the delay but life's getting on the way.* 
