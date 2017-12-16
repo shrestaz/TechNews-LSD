@@ -120,7 +120,8 @@ The system is able to digest up to 6 requests for 200 milliseconds(Picture 5). T
 
 > [Detailed documentation of ELK stack implementation can be found here.](https://github.com/shrestaz/TechNews-LSD/blob/master/Logging%20and%20Post-mortem%20analysis.md)
 
-##### 1.3.3.1 Database:
+**1.3.3.1 Database:**
+
 The MySQL database is built to be as simple as possible.
 
 ![Posts Table](https://raw.githubusercontent.com/shrestaz/TechNews-LSD/master/phpmysql.png)
@@ -145,7 +146,8 @@ Here dbseed.sql is the initial structure of the database.
 This is the script for the initial set-up of the database structure. After volume has been created for this database the initial structure script will not be executed.
 
 
-#### 1.3.3.2. Back-end system:
+**1.3.3.2. Back-end system:**
+
 The back-end of the system  was written in Node.js with Express framework. It consists of 6 routes which shows the index page, lists posts, lists users, gets latest `hannest_id`, shows system status and metrics for monitoring. This REST API handles CRUD operations initiated by the operators or the simulator system.
 
 [Source code for the API, hosted on GitHub](https://github.com/expert26111/NodeServer)
