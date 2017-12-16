@@ -24,7 +24,7 @@ As for the second phase, a world of technologies and tools were introduced. This
 
 # Table of Contents
 
-1. [Requirements, architecture, design and process](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#1-requirements-architecture-design-and-process)                                  
+1. [Requirements, architecture, design and process](#1)                                  
  1.1. [System Requirements](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#11-system-requirements)    
  1.2. [Development Process](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#12-development-process)    
  1.3. [Software architecture, design and implementation](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#13-software-architecture-design-and-implementation)  
@@ -47,7 +47,7 @@ As for the second phase, a world of technologies and tools were introduced. This
   
 --------------------------------------------
 
-## 1. Requirements, architecture, design and process
+## 1. Requirements, architecture, design and process <a name="1"></a>
 
 ### 1.1. System requirements
 
