@@ -20,6 +20,10 @@ As students, we had always been developing parts of systems fulfilling certain r
 
 As for the second phase, a world of technologies and tools were introduced. This included implementing monitoring, logging, security and scaling to name a few. We also had to use the same tools to operate and monitor other group’s system. This allowed us to keep track of whether the service-level agreement was fulfilled or not.
 
+# Table of Contents
+1. [Requirements, architecture, design and process](#requirements-architecture-design-and-process)
+
+
 ## 1. Requirements, architecture, design and process
 
 ### 1.1. System requirements
