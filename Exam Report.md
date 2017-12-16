@@ -21,8 +21,25 @@ As students, we had always been developing parts of systems fulfilling certain r
 As for the second phase, a world of technologies and tools were introduced. This included implementing monitoring, logging, security and scaling to name a few. We also had to use the same tools to operate and monitor other group’s system. This allowed us to keep track of whether the service-level agreement was fulfilled or not.
 
 # Table of Contents
-1. [Requirements, architecture, design and process](#requirements-architecture-design-and-process)
-
+1. [Requirements, architecture, design and process](#requirements,-architecture,-design-and-process)
+ 1.1. [System Requirements](#system-requirements)
+ 1.2. [Development Process](#development-process)
+ 1.3. [Software architecture, design and implementation](#software-architecture,-design-and-implementation)
+  1.3.1. [Development](#development)
+  1.3.2. [Continuous Integration](#continuous-integration)
+  1.3.3. [Hosting and Deployment](#hosting-and-deployment)
+   1.3.3.1. [Database](#database)
+   1.3.3.2. [Back-end System](#back-end-system)
+  1.3.4. [Monitoring](#monitoring)
+2. [Maintenance and SLA status](#maintenance-and-sla-status)
+ 2.1. [Hand-over](#hand-over)
+ 2.2. [Service-level agreement](#service-level-agreement)
+ 2.3. [Maintenance and Reliability](#maintenance-and-reliability)
+  2.3.1. [Incidents reported](#incidents-reported)
+3. [Discussion](#discussion)
+ 3.1.[Technical discussion](#technical-discussion)'
+ 3.2. [Group work reflection & Lessons learned](#group-work-reflection-&-lessons-learned)
+  
 
 ## 1. Requirements, architecture, design and process
 
@@ -57,7 +74,7 @@ Every component of the final system is a Docker container complementing each oth
 
 The software architecture consists of the following components:
 
-#### 1.3.1 Development
+#### 1.3.1. Development
 The two teammates have the same version of project on their local machines. Github webhook has been added to the continuous integration tool, Jenkins. On every push to GitHub, the commit is built by [Jenkins on our DigitalOcean droplet](http://207.154.245.251:9090)  where it has been hosted.
 
 
@@ -112,7 +129,7 @@ appenders: {
        }
 ```
 
-**1.3.3.1 Database:**
+**1.3.3.1. Database:**
 
 The MySQL database is built to be as simple as possible.
 
@@ -146,7 +163,7 @@ The back-end of the system  was written in Node.js with Express framework. It co
 
 [Source code for the API, hosted on GitHub](https://github.com/expert26111/NodeServer)
 
-#### 1.3.4 Monitoring:
+#### 1.3.4. Monitoring:
 
 Prometheus + Grafana and Kibana were used for monitoring and analysis of the system.
 
@@ -214,7 +231,7 @@ During the stress test our system had significant load practiced on it. We had t
 
 We were monitoring our system on a daily basis and whenever it was down we were alerted by Grafana. 
 
-#### 2.3.1 Incidents Reported:
+#### 2.3.1. Incidents reported:
 
 ![Issue #1](https://lh3.googleusercontent.com/TF9Ndb5QQHCQw-XKBYu1U5TvY-pzCShXnWjkpA29OontAeuO_eC_zAgRxjSAArRg5pEYRouIJ0fKtQ=s0 "Issue #1")
 
