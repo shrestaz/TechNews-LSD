@@ -108,12 +108,14 @@ appenders: {
        }
 ```
 ![Kibana](https://lh3.googleusercontent.com/s7fhE-AfWSkMOBuQVjSihjzmG6uVtOICNfjpwHtSQEB1a_6WShcIFvjKbnlr9vwdIKF0GiOsDaL1Kg=s0 "kibana.png")
+
 *Picture 4: Kibana activity*
 
 *Picture 4* displays the requests activity to our server. On the 15.12.2017, Kibana was asked to show requests activity for the last 30 days. The activity shows from its start day when the ELK stack droplet was created to start logging. This period is 27.11.2017 until the last day the Helge’s script was running, 15.12.2017. Interesting statistics have been seen through Kibana. For example:
 The system is able to digest up to 6 requests for 200 milliseconds(Picture 5). The logging helped us realize why some posts did not get digested. Two main reasons were that post_title and post_text needed to accept more characters.
 
 ![Kibana](https://raw.githubusercontent.com/shrestaz/TechNews-LSD/master/6milliseconds.png)
+
 *Picture 5: Kibana Requests*
 
 > [Detailed documentation of ELK stack implementation can be found here.](https://github.com/shrestaz/TechNews-LSD/blob/master/Logging%20and%20Post-mortem%20analysis.md)
