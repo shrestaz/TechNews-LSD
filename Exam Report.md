@@ -56,6 +56,7 @@ The software architecture consists of the following components:
 
 
 ![enter image description here](https://raw.githubusercontent.com/shrestaz/TechNews-LSD/master/githubhook.png)
+
 *Picture 1: Github Webhook*
 
  
