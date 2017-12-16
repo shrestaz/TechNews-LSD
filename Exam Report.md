@@ -87,7 +87,7 @@ When all containers are running we have the system up.
 
 We have chosen the approach to work with Docker containers instead vagrant because with containers ,we have almost all services running in one droplet over a bridged network. That way we save money from running all different services on different droplets and all containers can communicate with each other by default without further setup. The only service that is running on another droplet is the ELK stack which is hosted on http://159.89.2.54:5601
 
-In order for the ELK stack to be functional and running the following, `docker-compose.yml` file was created:
+In order for the ELK stack to be functional and running, the following `docker-compose.yml` file was created:
 
 ![Docker-compose ELK](https://lh3.googleusercontent.com/lTfmTesmfcr9l-VS32nwu-HRjPKmqQ-JopDwWjOJDBe1vkaGJYujuNPBNwQLwCxkrgTqUSLSfrWsAg=s0 "docker-compose elk")
 
@@ -107,18 +107,6 @@ appenders: {
        fileDebug: { type: 'file', filename: '/var/log/logsDebug.log' },
        }
 ```
-![Kibana](https://lh3.googleusercontent.com/s7fhE-AfWSkMOBuQVjSihjzmG6uVtOICNfjpwHtSQEB1a_6WShcIFvjKbnlr9vwdIKF0GiOsDaL1Kg=s0 "kibana.png")
-
-*Picture 4: Kibana activity*
-
-*Picture 4* displays the requests activity to our server. On the 15.12.2017, Kibana was asked to show requests activity for the last 30 days. The activity shows from its start day when the ELK stack droplet was created to start logging. This period is 27.11.2017 until the last day the Helge’s script was running, 15.12.2017. Interesting statistics have been seen through Kibana. For example:
-The system is able to digest up to 6 requests for 200 milliseconds(Picture 5). The logging helped us realize why some posts did not get digested. Two main reasons were that post_title and post_text needed to accept more characters.
-
-![Kibana](https://raw.githubusercontent.com/shrestaz/TechNews-LSD/master/6milliseconds.png)
-
-*Picture 5: Kibana Requests*
-
-> [Detailed documentation of ELK stack implementation can be found here.](https://github.com/shrestaz/TechNews-LSD/blob/master/Logging%20and%20Post-mortem%20analysis.md)
 
 **1.3.3.1 Database:**
 
@@ -137,7 +125,7 @@ The MySQL database is built to be as simple as possible.
 *Picture 7* shows how we implemented the user table. For primary key we have decided to use `username` and `password` to uniquely identify an user.  
 If the reader wants to check out themselves the structure of our database, it is available through [phpMyAdmin](http://207.154.245.251:8080/db_structure.php?server=1&db=hackernews).
 
-The Dockerfile that is used to create the database image(thatonedroid/hackernewsapi) is :
+The Dockerfile that is used to create the database image`(thatonedroid/hackernewsapi)` is :
 
 ![DB Seed](https://lh3.googleusercontent.com/iQBTXsqjTKGFHHCZym_Y-fXhCexmnyM3MOUGvI_Ex86AGZ_JxEjhbw-0SjHDG4gmydGZBtLmAn7D3g=s0 "DBseed")
 
@@ -156,7 +144,7 @@ The back-end of the system  was written in Node.js with Express framework. It co
 
 #### 1.3.4 Monitoring:
 
-Prometheus and Grafana were used for monitoring and analysis of the system.
+Prometheus + Grafana and Kibana were used for monitoring and analysis of the system.
 
 There is a configuration file on the root of the project which has target defined with the system’s API. This, in combination with [`routes/metrics.js`](https://github.com/expert26111/NodeServer/blob/master/routes/metrics.js) class, allows for Prometheus to collect metrics and monitor the system.
 
@@ -167,6 +155,24 @@ It provides multiple types of graphs and charts which are easier to read and und
 [View Prometheus](http://207.154.245.251:9000/graph)
 
 [View Grafana](http://207.154.245.251:4000/dashboard/db/nodeapi-monitoring?refresh=5s&orgId=1&from=now-1h&to=now)
+
+[View Kibana](http://159.89.2.54:5601/app/kibana#/discover?_g=()&_a=(columns:!(_source),index:'17b9cf50-d37f-11e7-ad9a-839a0aae0149',interval:auto,query:(language:lucene,query:''),sort:!('@timestamp',desc)))
+
+Kibana is another visualization tool from the ELK stack. While similar to Grafana in a glance, Kibana is a much more powerful tool since it is built on top of log data stored on ElasticSearch clusters. We get much more granular information with this tool.
+
+![Kibana](https://lh3.googleusercontent.com/s7fhE-AfWSkMOBuQVjSihjzmG6uVtOICNfjpwHtSQEB1a_6WShcIFvjKbnlr9vwdIKF0GiOsDaL1Kg=s0 "kibana.png")
+
+*Picture 4: Kibana activity*
+
+*Picture 4* displays the requests activity to our server. On the 15.12.2017, Kibana was asked to show requests activity for the last 30 days. The activity shows from its start day when the ELK stack droplet was created to start logging. This period is 27.11.2017 until the last day the Helge’s script was running, 15.12.2017. Interesting statistics have been seen through Kibana. For example:
+The system is able to digest up to 6 requests for 200 milliseconds(Picture 5). The logging helped us realize why some posts did not get digested. Two main reasons were that post_title and post_text needed to accept more characters.
+
+![Kibana](https://raw.githubusercontent.com/shrestaz/TechNews-LSD/master/6milliseconds.png)
+
+*Picture 5: Kibana Requests*
+
+> [Detailed documentation of ELK stack implementation can be found here.](https://github.com/shrestaz/TechNews-LSD/blob/master/Logging%20and%20Post-mortem%20analysis.md)
+
 
 Full and detail explanation of our documentation can be found on this link:
 https://github.com/shrestaz/TechNews-LSD
