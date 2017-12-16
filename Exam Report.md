@@ -55,9 +55,7 @@ The software architecture consists of the following components:
 1. The two teammates have the same version of project on their local machines. Github webhook has been added to the continuous integration tool, Jenkins. On every push to GitHub, the commit is built by [Jenkins on our DigitalOcean droplet](http://207.154.245.251:9090)  where it has been hosted.
 
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/shrestaz/TechNews-LSD/master/githubhook.png" alt="Github Webhook]"/>
-</p>
+![enter image description here](https://raw.githubusercontent.com/shrestaz/TechNews-LSD/master/githubhook.png)
 *Picture 1: Github Webhook*
 
  
