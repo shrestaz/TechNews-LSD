@@ -1,7 +1,8 @@
 Hacker News Report - Large System Development
 ---------------------------------------------
-### <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Simpleicons_Business_pencil.svg" width="20" height="20" /> **Group G**
+### <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Simpleicons_Business_pencil.svg" width="18" height="18" /> **Group G**
 Yoana Dandarova
+
 Manish Shrestha
 
 ## Introduction
