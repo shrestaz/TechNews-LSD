@@ -26,39 +26,39 @@ As for the second phase, a world of technologies and tools were introduced. This
 
 1. [Requirements, architecture, design and process](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#1-requirements-architecture-design-and-process)
 
- 1.1. [System Requirements](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#11-system-requirements)
+  1.1. [System Requirements](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#11-system-requirements)
  
- 1.2. [Development Process](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#12-development-process)
+  1.2. [Development Process](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#12-development-process)
  
- 1.3. [Software architecture, design and implementation](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#13-software-architecture-design-and-implementation)
+  1.3. [Software architecture, design and implementation](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#13-software-architecture-design-and-implementation)
  
-  1.3.1. [Development](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#131-development)
+    1.3.1. [Development](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#131-development)
   
-  1.3.2. [Continuous Integration](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#132-continuous-integration)
+    1.3.2. [Continuous Integration](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#132-continuous-integration)
   
-  1.3.3. [Hosting and Deployment](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#133-hosting-and-deployment)
+    1.3.3. [Hosting and Deployment](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#133-hosting-and-deployment)
    
-   1.3.3.1. [Database](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#1331-database)   
+      1.3.3.1. [Database](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#1331-database)   
    
-   1.3.3.2. [Back-end System](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#1332-back-end-system)   
+      1.3.3.2. [Back-end System](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#1332-back-end-system)   
   
-  1.3.4. [Monitoring](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#134-monitoring)  
+    1.3.4. [Monitoring](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#134-monitoring)  
 
 2. [Maintenance and SLA status](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#2-maintenance-and-sla-status)
  
- 2.1. [Hand-over](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#21-hand-over)
+  2.1. [Hand-over](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#21-hand-over)
  
- 2.2. [Service-level agreement](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#22-service-level-agreement)
+  2.2. [Service-level agreement](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#22-service-level-agreement)
  
- 2.3. [Maintenance and Reliability](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#23-maintenance-and-reliability)
+  2.3. [Maintenance and Reliability](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#23-maintenance-and-reliability)
   
-  2.3.1. [Incidents reported](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#231-incidents-reported)
+    2.3.1. [Incidents reported](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#231-incidents-reported)
   
 3. [Discussion](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#3-discussion)
  
- 3.1.[Technical discussion](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#31-technical-discussion)
+  3.1.[Technical discussion](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#31-technical-discussion)
  
- 3.2. [Group work reflection & Lessons learned](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#32-group-work-reflection--lessons-learned)
+  3.2. [Group work reflection & Lessons learned](https://github.com/shrestaz/TechNews-LSD/blob/master/Exam%20Report.md#32-group-work-reflection--lessons-learned)
   
 --------------------------------------------
 
