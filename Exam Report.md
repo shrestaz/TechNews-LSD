@@ -125,11 +125,13 @@ The system is able to digest up to 6 requests for 200 milliseconds(Picture 5). T
 The MySQL database is built to be as simple as possible.
 
 ![Posts Table](https://raw.githubusercontent.com/shrestaz/TechNews-LSD/master/phpmysql.png)
+
 *Picture 6: Post Table*
 
 *Picture 6* represents the post table in our hackernews database. Here `hannest_id` is primary key, unique and auto-increment. There is foreign key constraint with the user table.
 
 ![User Table](https://raw.githubusercontent.com/shrestaz/TechNews-LSD/master/usertable.png)
+
 *Picture 7: User Table*
 
 *Picture 7* shows how we implemented the user table. For primary key we have decided to use `username` and `password` to uniquely identify an user.  
